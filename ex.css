@@ -1,0 +1,105 @@
+*{
+   padding: 0;
+   margin: 0;
+   color: whitesmoke;
+}
+body{
+    background-image: url(thumb-1920-1347180.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navigator
+{
+   display: flex;
+   justify-content:space-between;
+   margin-top: 30px;
+}
+ul
+{
+    display:flex;
+    justify-content: flex-end;
+}
+ul li a{
+    text-decoration: none;
+    position:relative
+    
+}
+ul li a:hover
+{
+    color: rgba(0, 0, 0, 0.477);
+    transition: 0.2s;
+   
+}
+ul li
+{
+    padding: 0 25px ;
+    list-style: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.brand{
+    margin-left: 20px;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.body h1
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-size: 50px;
+
+}
+.body p{
+    
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    font-size: small;
+
+}
+ .contact,.order
+{
+    text-decoration: none;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #360b55b5;
+    border-radius: 20px;
+    border-color: pink;
+   
+}
+.placeorder
+{
+    display: flex;
+}
+.contact{
+    margin-left: 38%;
+}
+.order{
+    margin-left: 5%;
+}
+.contact:hover,.order:hover{
+    border-width: 2px;
+    border-color: rgb(255, 0, 85);
+    border-style: solid;
+    transition: .25s linear;
+    background-color: #05010fb9;
+    cursor: pointer;
+}
+li a::after
+{
+    content: "";
+    position: absolute;
+    background-color: rgb(235, 202, 228);
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom:-5px;
+    transition: 0.5s;
+}
+li a:hover::after{
+    width: 100%;
+    transition: 0.5s linear;
+}
